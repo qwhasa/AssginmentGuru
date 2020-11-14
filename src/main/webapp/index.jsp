@@ -36,7 +36,7 @@
 		</div>
 		<div class="col-md-5 mt-4">
 			<a href="customer.jsp" class="btn btn-danger">Customer</a>
-			<a href="" class="btn btn-outline-light">Investor</a>
+			<a href="investor.jsp" class="btn btn-outline-light">Investor</a>
 		</div>
 		
 	</div>

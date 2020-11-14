@@ -47,8 +47,8 @@
         Profile(<%= email %>)
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Change Password</a>
-        <a class="dropdown-item" href="#">Update Profile</a>
+        <a class="dropdown-item" href="cuschangepass.jsp">Change Password</a>
+        <a class="dropdown-item" href="cuschangeprof.jsp">Update Profile</a>
         <a class="dropdown-item" href="logout.jsp">Logout</a>
       </div>
     </li>
@@ -64,8 +64,15 @@
     <li class="nav-item">
       <a class="nav-link" href="about.jsp">View Ideas</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contact.jsp">Profile</a>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Profile(<%= email %>)
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="investor_pass.jsp">Change Password</a>
+        <a class="dropdown-item" href="investor_profile.jsp">Update Profile</a>
+        <a class="dropdown-item" href="logout.jsp">Logout</a>
+      </div>
     </li>
   </ul>
   <%

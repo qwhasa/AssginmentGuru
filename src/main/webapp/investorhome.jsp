@@ -26,14 +26,14 @@
 String login = (String)session.getAttribute("login");
 
 if(login==null){
-	response.sendRedirect("customer.jsp");
+	response.sendRedirect("investor.jsp");
 }
 
 %>
 </div>
 
 <div class="ariclecontent">
-<h1>Welcome to Customergguru (<%= email %>)</h1>
+<h1>Welcome to Investorgguru (<%= email %>)</h1>
 <p>The Peterborough Region Angel Network (PRAN) brings together individual investors from the Peterborough area. Peterborough Angels combine their wealth of knowledge and experience to collaborate and invest in early stage growth companies. Our particular areas of focus for investment include: information & communication technology (ICT), medical technology, green technology (cleantech), biotechnology and life-sciences.</p>
 </div>
 

@@ -14,34 +14,34 @@
 <body>
 <div class="fluid-container">
 <!-- header code started -->
-
 <%@ include file="header.jsp"%>
-
 <!-- header code completed -->
+
 <main>
-<hr/>
-<div>
-<%
 
-String login = (String)session.getAttribute("login");
 
-if(login==null){
-	response.sendRedirect("customer.jsp");
-}
-
-%>
+<div class="row mb-3">
+	<div class="col-md-1"></div>
+	<div class="col-md-4">
+		<h2>Change Password</h2>
+		<form action="cuspasschange.jsp" method="post">
+			<div class="form-group">
+			<label for="email">Enter Email</label>
+			<input type="email" class="form-control" name="email" required/>
+			</div>
+			<div class="form-group">
+			<label for="password">Enter New Password</label>
+			<input type="password" class="form-control" name="password" required/>
+			</div>
+			<input type="submit" value="submit" class="btn btn-primary"/>
+			
+		</form>
+	</div>
+	<div class="col-md-1"></div>
 </div>
-
-<div class="ariclecontent">
-<h1>Welcome to Customergguru (<%= email %>)</h1>
-<p>The Peterborough Region Angel Network (PRAN) brings together individual investors from the Peterborough area. Peterborough Angels combine their wealth of knowledge and experience to collaborate and invest in early stage growth companies. Our particular areas of focus for investment include: information & communication technology (ICT), medical technology, green technology (cleantech), biotechnology and life-sciences.</p>
-</div>
-
 </main>
-
-<footer>
-<p>&copy; 2020 All Rights Reserded</p>
-</footer>
+</div>
+<%@ include file="footer.jsp" %>
 
 
 </div>
